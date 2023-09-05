@@ -1,0 +1,217 @@
+:root {
+  --main-color: #F54C1E;
+  --second-color: #F50103;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #101010;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Start Header */
+header .navbar-toggler {
+  background-color: #5A5A5A;
+}
+header nav .navbar-nav li a {
+  color: white;
+}
+header nav .navbar-nav li a:hover,
+header nav .navbar-nav .nav-item a.active {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+header .button a {
+  background-color: var(--second-color);
+}
+/* End Header */
+/* Start Landing */
+.landing .text h1 {
+  font-size: 50px;
+}
+.landing .text h1 span {
+  color: var(--second-color);
+}
+.landing .text a {
+  background-color: var(--second-color);
+}
+.landing .img::before {
+  content: "";
+  background-color: #1C1C1C;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 45%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+/* End Landing */
+/* Start Links */
+.links {
+  background-color: var(--second-color);
+}
+/* End Links */
+/* Start Services */
+.services .serv-head span {
+  color: var(--second-color);
+}
+.services .card {
+  background-color: #181818;
+}
+.services .card span {
+  font-family: 'Cormorant', serif;
+}
+.services .card p {
+  font-size: 15px;
+}
+/* End Services */
+/* Start Skills */
+.skills .skill {
+  border-top: 2px solid white;
+  width: calc(100% - 50px);
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+}
+.skills .box {
+  counter-reset: num;
+}
+@media (max-width: 767px) {
+  .skills .box {
+    text-align: center;
+  }
+}
+.skills h3::before {
+  content: "0"counter(num);
+  position: absolute;
+  top: -18px;
+  left: -35px;
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .skills h3::before {
+    display: none;
+  }
+}
+.skills h3 {
+  counter-increment: num;
+}
+.skills h3::after {
+  content: "\f14c";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: var(--main-color);
+  position: absolute;
+  top: -16px;
+  right: -33px;
+}
+.skill .types span {
+  font-size: 20px;
+}
+.skill .types:nth-child(1) span {
+  font-size: 10px;
+}
+.skills .types span:nth-last-of-type(2),
+.skills .types span:nth-last-of-type(1){
+  color: #5A5A5A;
+}
+.skills .types i {
+  color: var(--main-color);
+}
+.skills .details {
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .skills .details {
+    text-align: center;
+    width: 100%;
+  }
+}
+.skills .details a {
+  background-color: var(--main-color);
+}
+.skills .details i {
+  left: 112px;
+}
+@media (max-width: 767px) {
+  .skills .button {
+    width: fit-content;
+    margin: auto;
+  }
+}
+/* End Skills */
+/* Start Portfolio */
+.portfolio .title p {
+  font-size: 15px;
+}
+.portfolio a {
+  background-color: var(--main-color);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+/* End Portfolio */
+/* Start Testimonials */
+.opinions .box .card  {
+  background-color: #1D2027;
+}
+.opinions .box .card .upper i {
+  color: var(--main-color);
+}
+.opinions .box .card .upper i:nth-of-type(2) {
+  right: 20px;
+  bottom: 10px;
+}
+.opinions .box .card .lower {
+  background-color: #101010;
+  outline: 1px solid #101010;
+}
+/* End Testimonials */
+/* Start Brands */
+.brands {
+  background-color: #1D2027;
+}
+.brands p {
+  font-size: 13px;
+}
+/* End Brands */
+/* Start Footer */
+footer input[type="text"] {
+  background-color: transparent;
+  border: 1px solid white;
+}
+footer input[type="text"]::placeholder {
+  color: white;
+}
+footer .box .text {
+  width: 30%;
+}
+@media (max-width: 767px) {
+  footer .box .text {
+    width: 100%;
+  }
+}
+/* End Footer */
